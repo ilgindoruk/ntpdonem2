@@ -30,9 +30,7 @@
         {
             lblgıthub = new Label();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // lblgıthub
@@ -48,7 +46,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.github;
-            pictureBox1.Location = new Point(411, 68);
+            pictureBox1.Location = new Point(63, 131);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(225, 225);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -56,28 +54,18 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.d;
-            pictureBox2.Location = new Point(43, 116);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(147, 50);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox2);
+            BackColor = Color.FromArgb(128, 255, 255);
+            ClientSize = new Size(370, 450);
             Controls.Add(pictureBox1);
             Controls.Add(lblgıthub);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -86,6 +74,5 @@
 
         private Label lblgıthub;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
     }
 }
